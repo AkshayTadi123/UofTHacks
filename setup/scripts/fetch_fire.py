@@ -1,6 +1,6 @@
 import requests
 
-def fetch_fire_data(api_key, date="2025-01-18"):
+def fetch_fire_data(api_key, date="2024-01-18"):
     """
     Fetch fire data from the NASA FIRMS API in CSV format.
     
