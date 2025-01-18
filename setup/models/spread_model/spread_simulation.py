@@ -35,9 +35,14 @@
 #     print(spread)
 
 
+import sys
+import os
 
+# Add the parent directory to the sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 import numpy as np
 from visualizations.map_visualizer import visualize_fire  # Absolute import
+
 
 def spread_fire(grid, wind_speed, wind_direction, iterations=10):
     """
